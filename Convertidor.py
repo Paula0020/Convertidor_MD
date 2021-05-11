@@ -30,7 +30,7 @@ def extraer():
 
 Show= Label(root,text="Seleccione una carpeta para la extracción: ",font= "Times 12",bg=color, fg="RoyalBlue4")
 Show.grid(row=5, column=0)
-Get_Button = Button(root,bd=1,font="cambria 9  italic ", background="white", text="Selección",relief="sunken",command= extraer)
+Get_Button = Button(root,bd=1,font="cambria 9 ", background="white", text="Selección",relief="sunken",command= extraer)
 Get_Button.grid(row=5, column=1)
 
 def getpath():
@@ -49,11 +49,11 @@ def guardar():
 
 Show2= Label(root,text="Seleccione una carpeta para guardar los archivos mseed: ",font= "Times 12",bg=color, fg="RoyalBlue4")
 Show2.grid(row=7, column=0)
-Get_Button2 = Button(root,bd=1,font="cambria 9 italic ", background="white", text="Selección",relief="sunken",command= getpath)
+Get_Button2 = Button(root,bd=1,font="cambria 9", background="white", text="Selección",relief="sunken",command= getpath)
 Get_Button2.grid(row=7, column=1)
 space= Label(root,text="",font= "Times 12",bg=color, fg="RoyalBlue4")
 space.grid(row=8, column=0)
-Aceptar = Button(root,bd=1,font="cambria 11  italic ", background="tomato2",fg="white", text="Aceptar",relief="flat",command= guardar)
+Aceptar = Button(root,bd=1,font="cambria 11", background="tomato2",fg="white", text="Aceptar",relief="flat",command= guardar)
 Aceptar.grid(row=9, column=0,columnspan=2)
 root.mainloop()
 
